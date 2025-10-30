@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos - Plataforma ONG</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Martz90-Circle-Google-earth.512.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="container">
+      <h1>Plataforma ONG</h1>
+      <div class="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" class="active">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container">
+      <section class="card">
+        <h2>Projetos Sociais</h2>
+        <p class="note">Conheça os projetos em andamento e saiba como doar ou se voluntariar para ajudar a nossa ONG.</p>
+
+        <article class="project">
+          <img src="professor-voluntario.jpg" alt="Professores Voluntários">
+          <div>
+            <h3>Projeto Educação Viva</h3>
+            <p class="note">Aulas, material didático e acompanhamento pedagógico para crianças atingidas por desastres naturais.</p>
+            <span class="badge">Educação</span>
+            <span class="badge">Voluntariado</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="cestas-entregues.jpg" alt="Cestas entregues">
+          <div>
+            <h3>Entregas de Cestas</h3>
+            <p class="note">Um dia focado em entregar mais de mil cestas para famílias desabrigadas.</p>
+            <span class="badge">Doações</span>
+            <span class="badge">Sociedade</span>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fechar modal">&times;</button>
+      <h3>Projeto selecionado!</h3>
+      <p>Obrigado por se interessar pelos nossos projetos.</p>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">Mensagem enviada com sucesso!</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Plataforma ONG.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

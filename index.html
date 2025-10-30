@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma da ONG</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Martz90-Circle-Google-earth.512.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="container">
+      <h1>Plataforma ONG</h1>
+      <div class="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container grid">
+      <div>
+        <!-- HERO -->
+        <section class="hero">
+          <h2>Bem-vindo à Plataforma da ONG</h2>
+          <p>Aqui nosso projeto é focado em educação para as áreas mais afetadas por desastres naturais.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="projetos.html">Projetos</a>
+            <a class="btn btn-ghost" href="cadastro.html">Quero ajudar</a>
+          </div>
+        </section>
+
+        <!-- ÚLTIMAS NOTÍCIAS -->
+        <section class="card" style="margin-top:1rem">
+          <h2>Últimas notícias</h2>
+          <div class="cards">
+            <article class="project">
+              <img src="professor-voluntario.jpg" alt="Professores Voluntários">
+              <div>
+                <h3>Campanha de Professores Voluntários</h3>
+                <p>Temos o apoio de professores que ajudam na educação em suas comunidades.</p>
+                <span class="badge">Educação</span>
+                <span class="badge">Voluntariado</span>
+              </div>
+            </article>
+
+            <article class="project">
+              <img src="cestas-entregues.jpg" alt="Entrega de cestas básicas">
+              <div>
+                <h3>Entrega de Cestas</h3>
+                <p>Relato das últimas entregas de cestas básicas realizadas pela ONG.</p>
+                <span class="badge">Doações</span>
+                <span class="badge">Sociedade</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <!-- SOBRE A ONG -->
+        <section class="card">
+          <h2>Sobre a ONG</h2>
+          <p class="note">Missão: transformar vidas por meio da educação e apoio social.</p>
+          <hr>
+          <p class="note">Acompanhe nossas campanhas e novidades preenchendo seu e-mail abaixo.</p>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="card" style="margin-top:1rem">
+          <h2>Atualizações</h2>
+          <p class="note">Assine para receber atualizações sobre campanhas.</p>
+          <form id="newsletter">
+            <label for="nl-email">E-mail</label>
+            <input id="nl-email" type="email" required placeholder="email@exemplo.com">
+            <button class="btn btn-primary" type="submit" style="margin-top:.5rem">Assinar</button>
+          </form>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fechar modal">&times;</button>
+      <h3>Cadastro enviado!</h3>
+      <p>Obrigado por se cadastrar em nossa plataforma. Juntos transformamos vidas!</p>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">Mensagem enviada com sucesso!</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Plataforma ONG.</small>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+  <script>
+    // Atualiza ano automaticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
